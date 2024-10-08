@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tag header</h1>
+      <p>
+        marca o cabeçalho do site (banner), onde geralmente estão presentes a
+        marca(logotipo), navegação do site e as vezes uma informação
+        introdutória.
+      </p>
+    </header>
+
+    <h1>Site direcionado a entender a semantica</h1>
+
+    <h2>Nav</h2>
+    <p>
+      A tag NAV é utilizada para ser elemnto pai de LINKs, pois são itens de
+      NAVegação. O atributo aria-label é utilizado para nomear o tipo de
+      navegação (primária, secundário)
+    </p>
+    <nav aria-label="primaria">
+      <a href="">Link 1</a>
+      <a href="">Link 2</a>
+      <a href="">Link 3</a>
+      <a href="">Link 4</a>
+      <a href="">Link 5</a>
+    </nav>
+
+    <aside>
+      <h1>Tag aside</h1>
+      <p>
+        a tag ASIDE é utilizada para marcar conteúdo complementar ao principal
+        do site.
+      </p>
+      <p>
+        Exemplos: lista de posts mais visitados, informações extras como a
+        descrição de um termo usado no artigo e mais (quem viu isso viu
+        tambem...) (produtos mais procurados)
+      </p>
+    </aside>
+
+    <section arial aria-label="section">
+      <h1 id="section">Tag section</h1>
+      <p>
+        A tag SECTION pode ser utilizada para agrupar o conteudo do site em
+        diferentes regiões. geralmente o conteudo necessita do seu contexto para
+        ser compreendido.
+      </p>
+    </section>
+
+    <section aria aria-label="texto">
+      <h1 id="texto">semanticas para usar no texto</h1>
+      <dl>
+          <dt>blockquote</dt>
+          <dd>utilizado para fazer citações no html. poussi um atributo chamado 'cite', onde colocamos nele o valor : o local onde retiramos a citação</dd>
+          <dt>Q</dt>
+          <dd>marca um citação inline, ou seja, dentro do texto.</dd>
+          <dt>cite</dt>
+          <dd>tag que serve para marcar obras (livros, filmes, pinturas etc)</dd>
+          <dt>em</dt>
+          <dd>tag utilizada para dar enfase em uma parte do texto</dd>
+          <dt>strong</dt>
+          <dd>utilizado para marcar uma parte importante do site, a deixaem </dd>
+          <strong>negrito</strong>
+      </dl>
+    </section>
+
+
+    <article aria-labelledby="artigo">
+      <h2 id="artigo">article</h2>
+      <p>
+        A tag article é uma seção (parte) do site que não precisa do site todo
+        para fazer sentido, ou seja, é uma região auto-explicativa.
+      </p>
+      <p>
+        O aria-labelledby é um atributo utilizado quando se quer evitar
+        repetições de palavras próximas no leitor de tela, ex: se você colocar
+        um título 'celular' e uma descrição aria-label = 'celular', o leitor de
+        tela lerá duas vezes a palavra celular causando um desconforto. Então,
+        utilizamos um ID no título e um aria-labelledby com, assim o leitor de
+        tela lerá somente uma vez.
+      </p>
+    </article>
+
+    <main>
+      <h2>Main</h2>
+      <p>A tag main guarda o conteúdo principal do site.</p>
+
+      <h1>tag Ol, UL, DL  e LI</h1>
+      <P>a tag UL é utilizada para criar listas não ordenadas (unodered list). ex:
+          <ul>
+            <li>Menus de um site </li>
+            <li>lista de topicos mais visitados</li>
+            <li>lista de ingredientes</li>
+          </ul>
+          <h1>OL é uma lista ordenada (ordered list). ex:</h1>
+          <h2>top 5 produtos mais vendidos do mês</h2>
+          <ol>
+            <li>barbeador elétrico</li>
+            <li>fritadeira S oleo </li>
+            <li>carrinho de controle remoto</li>
+            <li>mouse dragon fight 3mil</li>
+            <li>banco imobiliario</li>
+          </ol>
+      </P>
+
+      <h1>Tag dl</h1>  
+      <p>marca uma lista de  descrições (description list). a lista é criada com dois elementos dt e dd. ex</p>
+      <dl>
+        <dt>A tag dt</dt>
+        <dd>esta tag marca o topico a ser falado</dd>
+        <dt>a tag dd</dt>
+        <dd>esta tag marca a descrição do topico falado</dd>
+      </dl>
+
+    </main>
+
+    <footer>
+      <h1>tag footer</h1>
+      <p>é utilizada no final do site, geralmente possui dados de contato, outros links, info de copyright</p>
+    </footer>
+
+  </body>
+</html>

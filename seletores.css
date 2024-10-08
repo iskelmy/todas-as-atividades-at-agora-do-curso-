@@ -1,0 +1,14 @@
+h1{
+    color: blue;
+}
+p{
+    color: rgb(0, 66, 248);
+}
+
+p a{
+    color: rgb(0, 0, 0);
+}
+
+a{
+    color: violet;
+}
